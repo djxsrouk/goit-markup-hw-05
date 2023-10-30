@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">  
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -17,7 +17,7 @@
         <div class="header-navigation">
             <nav class="main-nav">
                 <ul>
-                    <li class="currentweblist"><a href="./index.html" class="nav-link current">Studio</a></li>
+                    <li class="current-bar"><a href="./index.html" class="nav-link current">Studio</a></li>
                     <li><a href="./portofolio.html" class="nav-link">Portofolio</a></li>
                     <li><a href="./contacts.html" class="nav-link">Contacts</a></li>
                 </ul>
@@ -40,8 +40,17 @@
                     <h1 id="title">EFFECTIVE SOLUTIONS FOR<br>YOUR BUSINESS</h1>
                 </div>
                 <div class="button-service">
-                    <button class="button">Request our service</button>
+                    <button data-modal-open class="button">Request our service</button>
                 </div>
+            </div>
+            <!-- Modal Request Service -->
+            <div class="modal is-hidden" data-modal>
+                <div class="modal-content">
+                    <svg class="close-button" data-modal-close>
+                        <use href="./images/symbol-defs.svg#icon-close"></use></svg>
+                        CONTINUT MODAL
+                </div>
+
             </div>
             
         </section>
@@ -101,8 +110,8 @@
             </ul>
         </section>
         
-        <!--What we do Section-->
-        <section class="what-we-do-section">
+         <!--What we do Section-->
+         <section class="what-we-do-section">
             <h2>What we do</h2>
             <div class="whatwedo">
                 <img src="./images/image01.jpg" alt="A person typing a code on the keyboard!" width="370px" />
@@ -267,5 +276,6 @@
                 </div>
             </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
