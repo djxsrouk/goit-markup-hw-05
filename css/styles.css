@@ -3,6 +3,7 @@
 }
 a:link, a:visited, a:active, a:hover {
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -55,6 +56,7 @@ section {
 
 .nav-link:hover, .nav-link:focus {
     color: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-top {
     font-family: Raleway;
@@ -78,8 +80,9 @@ section {
     font-size: 14px;
     line-height: 16.41px;
 }
-.info-link:hover, .info-link:focus {
+.info-link:hover, .info-link: {
     color: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio-bottom {
@@ -105,7 +108,7 @@ body {
     color: #000000;
 }
 
-.contact-email {
+.email {
     width: 16px;
     height: 12px;
     padding-right: 10px;
@@ -115,7 +118,7 @@ body {
     column-gap: 4px;
 }
 
-.contact-phone {
+.phone {
     width: 10px;
     height: 16px;
     padding-right: 10px;
@@ -126,19 +129,13 @@ body {
     
 }
 
-.contact-email:hover svg 
-.contact-email:hover a {
+.nav-contact a:focus,
+.nav-contact a:hover {
     color: #2196F3;
     fill: #2196F3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-contact:hover
-.nav-contact:hover svg {
-    fill: #2196F3;
-    color: #2196F3;
-}
-
-/* Top section */
 .top-section {
     background-color: #2f303a;
     color: #fff;
@@ -198,6 +195,7 @@ body {
 
 .button:hover, .button:focus {
     background: #188CE8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-service {
@@ -368,6 +366,7 @@ body {
 
 .social-item svg:hover {
     fill: #FFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -382,6 +381,7 @@ body {
     border-radius: 50px;
     fill: #FFF;
     gap: 10px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-container {
@@ -402,6 +402,7 @@ body {
 .team-card-social:hover {
     background-color: #2196F3;
     fill:#FFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -478,6 +479,7 @@ footer {
 .container-logo-address address a:focus,
 .container-logo-address address a:hover {
     color: #2196F3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-logo-address {
     display: inline-block;
@@ -571,6 +573,7 @@ footer {
 .social-link:hover {
     background-color: #2196F3;
     fill: #FFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-find h4 {
@@ -681,6 +684,7 @@ footer {
 .projects-menu .projects-button:hover, 
 .projects-menu .projects-button:focus {
     color: #2196F3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-menu .projects-button:link,
@@ -692,6 +696,7 @@ li .button:focus,
 li .button:hover {
     background-color: #2196f3;
     color: #fff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -699,6 +704,7 @@ li .button:hover {
 
 .projects-button:active, .currentweb:focus {
     color: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects {
     display: flex;
@@ -763,4 +769,28 @@ li .button:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-image .image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.blueoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;;
+}
+
+
+
+.image-container:hover .blueoverlay {
+    transform: translatey(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
