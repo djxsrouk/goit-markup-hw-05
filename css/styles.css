@@ -556,12 +556,7 @@ footer {
     width: 44px;
     height: 44px;
 }
-.social-buttons a:focus,
-.social-buttons a:hover {
-    background-color: #2196F3 !important;
-    color: #FFF !important;
-    fill: #FFF !important;
-}
+
 
 .social-buttons {
     display: flex;
@@ -572,6 +567,12 @@ footer {
     gap: 10px;
     padding-top: 20px;
 }
+
+.social-link:hover {
+    background-color: #2196F3;
+    fill: #FFF;
+}
+
 .social-find h4 {
     color: #FFF;    
 }
