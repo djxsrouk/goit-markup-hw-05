@@ -614,7 +614,7 @@ footer {
     visibility: hidden;
     pointer-events: fill;
     opacity: 0;
-    scale: calc(1.3);
+    scale: calc(2);
 }
 
 .close-button {
